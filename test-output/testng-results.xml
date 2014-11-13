@@ -1,0 +1,1249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="14" total="14" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="52072" started-at="2013-09-30T00:09:29Z" finished-at="2013-09-30T00:10:21Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="52072" started-at="2013-09-30T00:09:29Z" finished-at="2013-09-30T00:10:21Z">
+      <class name="test.loan.PayPalTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:test.loan.PayPalTest@100c62c8]" name="beforeTest" is-config="true" duration-ms="8276" started-at="2013-09-30T00:09:29Z" finished-at="2013-09-30T00:09:38Z">
+        </test-method> <!-- beforeTest -->
+        <test-method status="FAIL" signature="testamortizationSchedulePage(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.loan.PayPalTest@100c62c8]" name="testamortizationSchedulePage" duration-ms="3507" started-at="2013-09-30T00:09:38Z" data-provider="Validdata" finished-at="2013-09-30T00:09:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[.1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Command duration or timeout: 20 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Session ID: a9c61ccc-2409-4f88-a77b-2ac6d0457fec
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=17.0.8, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Command duration or timeout: 20 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Session ID: a9c61ccc-2409-4f88-a77b-2ac6d0457fec
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=17.0.8, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:533)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:302)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:387)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:294)
+	at test.loan.Utility.openLoanFormpage(Utility.java:73)
+	at test.loan.PayPalTest.testamortizationSchedulePage(PayPalTest.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:768)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1022)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:109)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:202)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:173)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.findElementInternal_(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8251)
+	at <anonymous class>.FirefoxDriver.findElement(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8260)
+	at <anonymous class>.DelayedCommand.executeInternal_/h(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10222)
+	at <anonymous class>.DelayedCommand.executeInternal_(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10227)
+	at <anonymous class>.DelayedCommand.execute/<(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10167)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        </test-method> <!-- testamortizationSchedulePage -->
+        <test-method status="FAIL" signature="testamortizationSchedulePage(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.loan.PayPalTest@100c62c8]" name="testamortizationSchedulePage" duration-ms="2887" started-at="2013-09-30T00:09:41Z" data-provider="Validdata" finished-at="2013-09-30T00:09:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[.1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Command duration or timeout: 13 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Session ID: a9c61ccc-2409-4f88-a77b-2ac6d0457fec
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=17.0.8, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Command duration or timeout: 13 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Session ID: a9c61ccc-2409-4f88-a77b-2ac6d0457fec
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=17.0.8, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:533)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:302)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:387)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:294)
+	at test.loan.Utility.openLoanFormpage(Utility.java:73)
+	at test.loan.PayPalTest.testamortizationSchedulePage(PayPalTest.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:768)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1022)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:109)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:202)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:173)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.findElementInternal_(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8251)
+	at <anonymous class>.FirefoxDriver.findElement(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8260)
+	at <anonymous class>.DelayedCommand.executeInternal_/h(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10222)
+	at <anonymous class>.DelayedCommand.executeInternal_(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10227)
+	at <anonymous class>.DelayedCommand.execute/<(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10167)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        </test-method> <!-- testamortizationSchedulePage -->
+        <test-method status="FAIL" signature="testamortizationSchedulePage(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.loan.PayPalTest@100c62c8]" name="testamortizationSchedulePage" duration-ms="3090" started-at="2013-09-30T00:09:44Z" data-provider="Validdata" finished-at="2013-09-30T00:09:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[.5]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Command duration or timeout: 15 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Session ID: a9c61ccc-2409-4f88-a77b-2ac6d0457fec
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=17.0.8, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Command duration or timeout: 15 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Session ID: a9c61ccc-2409-4f88-a77b-2ac6d0457fec
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=17.0.8, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:533)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:302)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:387)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:294)
+	at test.loan.Utility.openLoanFormpage(Utility.java:73)
+	at test.loan.PayPalTest.testamortizationSchedulePage(PayPalTest.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:768)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1022)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:109)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:202)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:173)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.findElementInternal_(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8251)
+	at <anonymous class>.FirefoxDriver.findElement(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8260)
+	at <anonymous class>.DelayedCommand.executeInternal_/h(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10222)
+	at <anonymous class>.DelayedCommand.executeInternal_(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10227)
+	at <anonymous class>.DelayedCommand.execute/<(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10167)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        </test-method> <!-- testamortizationSchedulePage -->
+        <test-method status="FAIL" signature="testamortizationSchedulePage(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.loan.PayPalTest@100c62c8]" name="testamortizationSchedulePage" duration-ms="3087" started-at="2013-09-30T00:09:47Z" data-provider="Validdata" finished-at="2013-09-30T00:09:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Command duration or timeout: 11 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Session ID: a9c61ccc-2409-4f88-a77b-2ac6d0457fec
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=17.0.8, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Command duration or timeout: 11 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Session ID: a9c61ccc-2409-4f88-a77b-2ac6d0457fec
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=17.0.8, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:533)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:302)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:387)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:294)
+	at test.loan.Utility.openLoanFormpage(Utility.java:73)
+	at test.loan.PayPalTest.testamortizationSchedulePage(PayPalTest.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:768)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1022)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:109)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:202)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:173)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.findElementInternal_(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8251)
+	at <anonymous class>.FirefoxDriver.findElement(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8260)
+	at <anonymous class>.DelayedCommand.executeInternal_/h(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10222)
+	at <anonymous class>.DelayedCommand.executeInternal_(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10227)
+	at <anonymous class>.DelayedCommand.execute/<(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10167)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        </test-method> <!-- testamortizationSchedulePage -->
+        <test-method status="FAIL" signature="testamortizationSchedulePage(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.loan.PayPalTest@100c62c8]" name="testamortizationSchedulePage" duration-ms="3073" started-at="2013-09-30T00:09:50Z" data-provider="Validdata" finished-at="2013-09-30T00:09:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[15]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Command duration or timeout: 12 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Session ID: a9c61ccc-2409-4f88-a77b-2ac6d0457fec
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=17.0.8, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Command duration or timeout: 12 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Session ID: a9c61ccc-2409-4f88-a77b-2ac6d0457fec
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=17.0.8, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:533)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:302)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:387)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:294)
+	at test.loan.Utility.openLoanFormpage(Utility.java:73)
+	at test.loan.PayPalTest.testamortizationSchedulePage(PayPalTest.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:768)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1022)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:109)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:202)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:173)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.findElementInternal_(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8251)
+	at <anonymous class>.FirefoxDriver.findElement(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8260)
+	at <anonymous class>.DelayedCommand.executeInternal_/h(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10222)
+	at <anonymous class>.DelayedCommand.executeInternal_(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10227)
+	at <anonymous class>.DelayedCommand.execute/<(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10167)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        </test-method> <!-- testamortizationSchedulePage -->
+        <test-method status="FAIL" signature="testforNegativeValues(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.loan.PayPalTest@100c62c8]" name="testforNegativeValues" duration-ms="3093" started-at="2013-09-30T00:09:53Z" data-provider="Wrongdata" finished-at="2013-09-30T00:09:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Command duration or timeout: 13 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Session ID: a9c61ccc-2409-4f88-a77b-2ac6d0457fec
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=17.0.8, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Command duration or timeout: 13 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Session ID: a9c61ccc-2409-4f88-a77b-2ac6d0457fec
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=17.0.8, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:533)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:302)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:387)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:294)
+	at test.loan.Utility.openLoanFormpage(Utility.java:73)
+	at test.loan.PayPalTest.testforNegativeValues(PayPalTest.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:768)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1022)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:109)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:202)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:173)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.findElementInternal_(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8251)
+	at <anonymous class>.FirefoxDriver.findElement(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8260)
+	at <anonymous class>.DelayedCommand.executeInternal_/h(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10222)
+	at <anonymous class>.DelayedCommand.executeInternal_(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10227)
+	at <anonymous class>.DelayedCommand.execute/<(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10167)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        </test-method> <!-- testforNegativeValues -->
+        <test-method status="FAIL" signature="testforNegativeValues(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.loan.PayPalTest@100c62c8]" name="testforNegativeValues" duration-ms="3076" started-at="2013-09-30T00:09:56Z" data-provider="Wrongdata" finished-at="2013-09-30T00:10:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Command duration or timeout: 11 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Session ID: a9c61ccc-2409-4f88-a77b-2ac6d0457fec
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=17.0.8, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Command duration or timeout: 11 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Session ID: a9c61ccc-2409-4f88-a77b-2ac6d0457fec
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=17.0.8, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:533)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:302)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:387)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:294)
+	at test.loan.Utility.openLoanFormpage(Utility.java:73)
+	at test.loan.PayPalTest.testforNegativeValues(PayPalTest.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:768)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1022)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:109)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:202)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:173)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.findElementInternal_(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8251)
+	at <anonymous class>.FirefoxDriver.findElement(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8260)
+	at <anonymous class>.DelayedCommand.executeInternal_/h(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10222)
+	at <anonymous class>.DelayedCommand.executeInternal_(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10227)
+	at <anonymous class>.DelayedCommand.execute/<(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10167)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        </test-method> <!-- testforNegativeValues -->
+        <test-method status="FAIL" signature="testforNegativeValues(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.loan.PayPalTest@100c62c8]" name="testforNegativeValues" duration-ms="3069" started-at="2013-09-30T00:10:00Z" data-provider="Wrongdata" finished-at="2013-09-30T00:10:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Command duration or timeout: 12 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Session ID: a9c61ccc-2409-4f88-a77b-2ac6d0457fec
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=17.0.8, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Command duration or timeout: 12 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Session ID: a9c61ccc-2409-4f88-a77b-2ac6d0457fec
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=17.0.8, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:533)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:302)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:387)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:294)
+	at test.loan.Utility.openLoanFormpage(Utility.java:73)
+	at test.loan.PayPalTest.testforNegativeValues(PayPalTest.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:768)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1022)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:109)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:202)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:173)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.findElementInternal_(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8251)
+	at <anonymous class>.FirefoxDriver.findElement(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8260)
+	at <anonymous class>.DelayedCommand.executeInternal_/h(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10222)
+	at <anonymous class>.DelayedCommand.executeInternal_(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10227)
+	at <anonymous class>.DelayedCommand.execute/<(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10167)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        </test-method> <!-- testforNegativeValues -->
+        <test-method status="FAIL" signature="testforNegativeValues(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.loan.PayPalTest@100c62c8]" name="testforNegativeValues" duration-ms="3083" started-at="2013-09-30T00:10:03Z" data-provider="Wrongdata" finished-at="2013-09-30T00:10:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Command duration or timeout: 9 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Session ID: a9c61ccc-2409-4f88-a77b-2ac6d0457fec
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=17.0.8, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Command duration or timeout: 9 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Session ID: a9c61ccc-2409-4f88-a77b-2ac6d0457fec
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=17.0.8, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:533)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:302)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:387)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:294)
+	at test.loan.Utility.openLoanFormpage(Utility.java:73)
+	at test.loan.PayPalTest.testforNegativeValues(PayPalTest.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:768)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1022)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:109)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:202)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:173)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.findElementInternal_(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8251)
+	at <anonymous class>.FirefoxDriver.findElement(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8260)
+	at <anonymous class>.DelayedCommand.executeInternal_/h(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10222)
+	at <anonymous class>.DelayedCommand.executeInternal_(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10227)
+	at <anonymous class>.DelayedCommand.execute/<(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10167)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        </test-method> <!-- testforNegativeValues -->
+        <test-method status="FAIL" signature="testforNegativeValues(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.loan.PayPalTest@100c62c8]" name="testforNegativeValues" duration-ms="3071" started-at="2013-09-30T00:10:06Z" data-provider="Wrongdata" finished-at="2013-09-30T00:10:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Command duration or timeout: 11 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Session ID: a9c61ccc-2409-4f88-a77b-2ac6d0457fec
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=17.0.8, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Command duration or timeout: 11 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Session ID: a9c61ccc-2409-4f88-a77b-2ac6d0457fec
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=17.0.8, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:533)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:302)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:387)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:294)
+	at test.loan.Utility.openLoanFormpage(Utility.java:73)
+	at test.loan.PayPalTest.testforNegativeValues(PayPalTest.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:768)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1022)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:109)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:202)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:173)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.findElementInternal_(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8251)
+	at <anonymous class>.FirefoxDriver.findElement(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8260)
+	at <anonymous class>.DelayedCommand.executeInternal_/h(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10222)
+	at <anonymous class>.DelayedCommand.executeInternal_(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10227)
+	at <anonymous class>.DelayedCommand.execute/<(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10167)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        </test-method> <!-- testforNegativeValues -->
+        <test-method status="FAIL" signature="testforNegativeValues(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.loan.PayPalTest@100c62c8]" name="testforNegativeValues" duration-ms="3106" started-at="2013-09-30T00:10:09Z" data-provider="Wrongdata" finished-at="2013-09-30T00:10:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Command duration or timeout: 15 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Session ID: a9c61ccc-2409-4f88-a77b-2ac6d0457fec
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=17.0.8, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Command duration or timeout: 15 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Session ID: a9c61ccc-2409-4f88-a77b-2ac6d0457fec
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=17.0.8, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:533)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:302)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:387)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:294)
+	at test.loan.Utility.openLoanFormpage(Utility.java:73)
+	at test.loan.PayPalTest.testforNegativeValues(PayPalTest.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:768)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1022)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:109)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:202)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:173)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.findElementInternal_(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8251)
+	at <anonymous class>.FirefoxDriver.findElement(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8260)
+	at <anonymous class>.DelayedCommand.executeInternal_/h(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10222)
+	at <anonymous class>.DelayedCommand.executeInternal_(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10227)
+	at <anonymous class>.DelayedCommand.execute/<(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10167)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        </test-method> <!-- testforNegativeValues -->
+        <test-method status="FAIL" signature="testforNegativeValues(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.loan.PayPalTest@100c62c8]" name="testforNegativeValues" duration-ms="3088" started-at="2013-09-30T00:10:12Z" data-provider="Wrongdata" finished-at="2013-09-30T00:10:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[@#$]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Command duration or timeout: 11 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Session ID: a9c61ccc-2409-4f88-a77b-2ac6d0457fec
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=17.0.8, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Command duration or timeout: 11 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Session ID: a9c61ccc-2409-4f88-a77b-2ac6d0457fec
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=17.0.8, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:533)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:302)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:387)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:294)
+	at test.loan.Utility.openLoanFormpage(Utility.java:73)
+	at test.loan.PayPalTest.testforNegativeValues(PayPalTest.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:768)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1022)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:109)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:202)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:173)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.findElementInternal_(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8251)
+	at <anonymous class>.FirefoxDriver.findElement(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8260)
+	at <anonymous class>.DelayedCommand.executeInternal_/h(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10222)
+	at <anonymous class>.DelayedCommand.executeInternal_(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10227)
+	at <anonymous class>.DelayedCommand.execute/<(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10167)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        </test-method> <!-- testforNegativeValues -->
+        <test-method status="FAIL" signature="testforNegativeValues(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.loan.PayPalTest@100c62c8]" name="testforNegativeValues" duration-ms="3081" started-at="2013-09-30T00:10:15Z" data-provider="Wrongdata" finished-at="2013-09-30T00:10:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ADad]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Command duration or timeout: 9 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Session ID: a9c61ccc-2409-4f88-a77b-2ac6d0457fec
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=17.0.8, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Command duration or timeout: 9 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Session ID: a9c61ccc-2409-4f88-a77b-2ac6d0457fec
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=17.0.8, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:533)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:302)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:387)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:294)
+	at test.loan.Utility.openLoanFormpage(Utility.java:73)
+	at test.loan.PayPalTest.testforNegativeValues(PayPalTest.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:768)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1022)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:109)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:202)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:173)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.findElementInternal_(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8251)
+	at <anonymous class>.FirefoxDriver.findElement(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8260)
+	at <anonymous class>.DelayedCommand.executeInternal_/h(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10222)
+	at <anonymous class>.DelayedCommand.executeInternal_(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10227)
+	at <anonymous class>.DelayedCommand.execute/<(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10167)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        </test-method> <!-- testforNegativeValues -->
+        <test-method status="FAIL" signature="testforNegativeValues(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.loan.PayPalTest@100c62c8]" name="testforNegativeValues" duration-ms="3080" started-at="2013-09-30T00:10:18Z" data-provider="Wrongdata" finished-at="2013-09-30T00:10:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[awdjwk]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Command duration or timeout: 11 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Session ID: a9c61ccc-2409-4f88-a77b-2ac6d0457fec
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=17.0.8, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Command duration or timeout: 11 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Session ID: a9c61ccc-2409-4f88-a77b-2ac6d0457fec
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=17.0.8, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:533)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:302)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:387)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:294)
+	at test.loan.Utility.openLoanFormpage(Utility.java:73)
+	at test.loan.PayPalTest.testforNegativeValues(PayPalTest.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:768)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1022)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:109)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:202)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:173)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"xpath","selector":"//*[@id=\"loanDetailsForm\"]/div/div/fieldset/legend"}
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 20:21:18'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_43'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.findElementInternal_(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8251)
+	at <anonymous class>.FirefoxDriver.findElement(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8260)
+	at <anonymous class>.DelayedCommand.executeInternal_/h(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10222)
+	at <anonymous class>.DelayedCommand.executeInternal_(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10227)
+	at <anonymous class>.DelayedCommand.execute/<(file:///C:/Users/DGANGW~1.ORA/AppData/Local/Temp/anonymous549536862378921228webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10167)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        </test-method> <!-- testforNegativeValues -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.loan.PayPalTest@100c62c8]" name="afterTest" is-config="true" duration-ms="353" started-at="2013-09-30T00:10:21Z" finished-at="2013-09-30T00:10:21Z">
+        </test-method> <!-- afterTest -->
+      </class> <!-- test.loan.PayPalTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

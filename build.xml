@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project basedir="." default="build" name="PaypalChallange">
+    <property environment="env"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
+    <property name="AppServer" location="D:/Software SetUp/Paypal/paypalqainterviewexercise/Node JS Code for CQES/Node JS Code for CQES/server.js"/>
+    <path id="PaypalChallange.classpath">
+        <pathelement location="bin"/>
+        <pathelement location="lib/testng-6.8.jar"/>
+        <pathelement location="lib/selenium-server-standalone-2.28.0.jar"/>
+        <pathelement location="lib/selenium-java-2.28.0.jar"/>
+        <pathelement location="lib/saxon-8.7.jar"/>
+        <pathelement location="lib/SaxonLiaison.jar"/>
+    </path>
+    
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    
+    <target depends="clean,build-project" name="build"/>
+    
+    <target depends="init" name="build-project">
+    <property name="testng_output" value="${basedir}/testng_output"/>
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="PaypalChallange.classpath"/>
+        </javac>
+    </target>
+ 
+ <!-- Config for testng -->
+ <taskdef name="testng" classname="org.testng.TestNGAntTask">
+     <classpath>
+      <pathelement location="lib/testng-6.8.jar"/>
+     </classpath>
+  </taskdef>
+  
+ <target name="StartApp"  >	
+	  <echo message="Starting the App server" />
+	  <exec dir="." executable="node" spawn="true">
+		<arg value="${AppServer}"/>
+  	  </exec>
+  	  <sleep seconds="10"/>
+	</target>
+    
+ <!-- execute testng after compile, then generate report -->
+ <target name ="Run" depends="build">
+     <mkdir dir="testng_output"/>
+   <!-- config testng -->
+ 	<testng outputdir="${testng_output}" classpathref="PaypalChallange.classpath" useDefaultListeners="true" >
+       <!-- execute testcase follow testng.xml -->
+      <xmlfileset dir="${basedir}" includes="testng.xml"/>
+      <!-- generate report title -->
+      <sysproperty key="org.uncommons.reportng.title" value="Test Automation"/>
+      <sysproperty key="org.uncommons.reportng.escape-output" value="false"/>
+  	</testng>
+    <antcall target="xslt"/> 
+ </target>
+    
+ <target name="xslt" >
+     <xslt in="${basedir}/testng_output/testng-results.xml" style="${basedir}/testng_output/testng-results.xsl" out="${basedir}/testng-xslt/PaypalTestResult.html" processor="SaxonLiaison">
+             <param expression="${basedir}/testng-xslt/" name="testNgXslt.outputDir" />
+            <param expression="true" name="testNgXslt.sortTestCaseLinks" />
+            <param expression="FAIL,SKIP,PASS,CONF,BY_CLASS" name="testNgXslt.testDetailsFilter" />
+            <param expression="true" name="testNgXslt.showRuntimeTotals" />
+            <classpath refid="PaypalChallange.classpath">
+            </classpath>
+        </xslt>
+    </target>
+</project>
